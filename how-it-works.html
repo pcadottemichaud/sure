@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Sure by gabrielfalcao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="python requests for filesystem, api for humans">
+  <meta property="og:site_name" content="Plant" />
+  <meta property="og:type" content="WeedLabs" />
+  <meta property="og:title" content="Plant, python filesystem for humans">
+  <meta property="og:url" content="http://falcao.it/plant" />
+  <meta property="og:image" content="http://falcao.it/plant/logo.png" />
+  <meta property="og:description" content="python requests for filesystem, api for humans" />
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="./assets/js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="./assets/js/jquery-migrate-1.2.1.min.js"></script>
+
+  <link rel="stylesheet" href="./assets/css/sphinx_rtd_theme.css" type="text/css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+
+    <body class="wy-body-for-nav">
+      <div class="wy-grid-for-nav">
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+          <div class="wy-side-nav-search" style="padding-bottom:0;">
+            <a style="font-size: 22px" href="./intro.html">Sure 0.1.0</a>
+          </div>
+
+          <div class="wy-menu wy-menu-vertical" data-spy="affix">
+            <ul>
+          
+            
+            
+  <li class="toctree-l1 "><a class="reference internal" href="./intro.html#introduction">Introduction</a>
+  
+      
+  
+    </li>
+  
+            
+          
+            
+            
+  <li class="toctree-l1 "><a class="reference internal" href="./getting-started.html#getting-started">Getting Started</a>
+  
+      
+       <ul class="">
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./getting-started.html#installing">Installing</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./getting-started.html#activating">Activating</a></li>
+  
+      
+  
+        
+       </ul>
+      
+  
+    </li>
+  
+            
+            
+  <li class="toctree-l1 "><a class="reference internal" href="./getting-started.html#python-version-compatibility">Python version compatibility</a>
+  
+      
+  
+    </li>
+  
+            
+            
+  <li class="toctree-l1 "><a class="reference internal" href="./getting-started.html#disabling-the-monkey-patching">Disabling the monkey patching</a>
+  
+      
+  
+    </li>
+  
+            
+          
+            
+            
+  <li class="toctree-l1 "><a class="reference internal" href="./reference.html#equality">Equality</a>
+  
+      
+       <ul class="">
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#-number--should-equal-number-">(number).should.equal(number)</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#---39-a--39-----39-collection--39---should-equal----39-a--39-----39-collection--39----does-deep-comparison">{&#39;a&#39;: &#39;collection&#39;}.should.equal({&#39;a&#39;: &#39;collection&#39;}) does deep comparison</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#-quot-a-string-quot--lower---should-equal--quot-a-string-quot---also-works">&quot;A string&quot;.lower().should.equal(&quot;a string&quot;) also works</a></li>
+  
+      
+  
+        
+       </ul>
+      
+  
+    </li>
+  
+            
+            
+  <li class="toctree-l1 "><a class="reference internal" href="./reference.html#similarity">Similarity</a>
+  
+      
+       <ul class="">
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#should-look_like-and-should_not-look_like">should.look_like and should_not.look_like</a></li>
+  
+      
+  
+        
+       </ul>
+      
+  
+    </li>
+  
+            
+            
+  <li class="toctree-l1 "><a class="reference internal" href="./reference.html#iterables">Iterables</a>
+  
+      
+       <ul class="">
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#should-contain-and-should_not-contain">should.contain and should_not.contain</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#should-match-and-should_not-match-matches-regular-expression">should.match and should_not.match matches regular expression</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#-iterable--should-be-empty-applies-to-any-iterable-of-length-0">{iterable}.should.be.empty applies to any iterable of length 0</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#-number--should-be-within-0--10--asserts-inclusive-numeric-range-">{number}.should.be.within(0, 10) asserts inclusive numeric range:</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#-member--should-be-within--iterable---asserts-that-a-member-is-part-of-the-iterable-">{member}.should.be.within({iterable}) asserts that a member is part of the iterable:</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#should-be-none-and-should_not-be-none">should.be.none and should_not.be.none</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#should-be-ok-and-shouldnt-be-ok">should.be.ok and shouldnt.be.ok</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#assert-existence-of-properties-and-their-values">Assert existence of properties and their values</a></li>
+  
+      
+       <ul class="">
+        
+          
+      
+  
+        
+       </ul>
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#assert-existence-of-keys-and-its-values">Assert existence of keys and its values</a></li>
+  
+      
+       <ul class="">
+        
+          
+      
+  
+        
+       </ul>
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#assert-the-length-of-objects-with--iterable--should-have-length_of-n-">Assert the length of objects with {iterable}.should.have.length_of(N)</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#assert-the-magnitude-of-objects-with--x--should-be-greater_than-y--and--y--should-be-lower_than-x--as-well-as--x--should-be-greater_than_or_equal_to-y--and--y--should-be-lower_than_or_equal_to-x-">Assert the magnitude of objects with {X}.should.be.greater_than(Y) and {Y}.should.be.lower_than(X) as well as {X}.should.be.greater_than_or_equal_to(Y) and {Y}.should.be.lower_than_or_equal_to(X)</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#callable-when-called_with-arg1--kwarg1-2--should-throw-exception-">callable.when.called_with(arg1, kwarg1=2).should.throw(Exception)</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#function-when-called_with-arg1--kwarg1-2--should-return_value-value-">function.when.called_with(arg1, kwarg1=2).should.return_value(value)</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#instance-should-be-a---39-typename--39---and-instance-should-be-an---39-typename--39--">instance.should.be.a(&#39;typename&#39;) and instance.should.be.an(&#39;typename&#39;)</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#instance-should-be-a-type--and-instance-should-be-an-type-">instance.should.be.a(type) and instance.should.be.an(type)</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#instance-should-be-above-num--and-instance-should-be-below-num-">instance.should.be.above(num) and instance.should.be.below(num)</a></li>
+  
+      
+  
+        
+       </ul>
+      
+  
+    </li>
+  
+            
+            
+  <li class="toctree-l1 "><a class="reference internal" href="./reference.html#static-assertions-with-it--this--those-and-these">Static assertions with it, this, those and these</a>
+  
+      
+       <ul class="">
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#too-long--don--39-t-read">Too long, don&#39;t read</a></li>
+  
+      
+       <ul class="">
+        
+          
+      
+  
+        
+          
+      
+  
+        
+       </ul>
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#-lambda--none--should-be-callable">(lambda: None).should.be.callable</a></li>
+  
+      
+       <ul class="">
+        
+          
+      
+  
+        
+       </ul>
+      
+  
+        
+       </ul>
+      
+  
+    </li>
+  
+            
+            
+  <li class="toctree-l1 "><a class="reference internal" href="./reference.html#synonyms">Synonyms</a>
+  
+      
+       <ul class="">
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#positive-synonyms">Positive synonyms</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#negative-synonyms">Negative synonyms</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#chain-up-synonyms">Chain-up synonyms</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#equality-synonyms">Equality synonyms</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#positive-boolean-synonyms">Positive boolean synonyms</a></li>
+  
+      
+  
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./reference.html#negative-boolean-synonyms">Negative boolean synonyms</a></li>
+  
+      
+       <ul class="">
+        
+          
+      
+  
+        
+       </ul>
+      
+  
+        
+       </ul>
+      
+  
+    </li>
+  
+            
+            
+  <li class="toctree-l1 "><a class="reference internal" href="./reference.html#about-sure-1-0">About sure 1.0</a>
+  
+      
+  
+    </li>
+  
+            
+          
+            
+            
+  <li class="toctree-l1  current "><a class="reference internal" href="./how-it-works.html#how-sure-works">How sure works</a>
+  
+      
+       <ul class="current">
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./how-it-works.html#chainability">Chainability</a></li>
+  
+      
+  
+        
+       </ul>
+      
+  
+    </li>
+  
+            
+            
+  <li class="toctree-l1  current "><a class="reference internal" href="./how-it-works.html#monkey-patching">Monkey-patching</a>
+  
+      
+       <ul class="current">
+        
+          
+  <li class="toctree-l2"><a class="reference internal" href="./how-it-works.html#why-cpython-only--">Why CPython-only ?</a></li>
+  
+      
+  
+        
+       </ul>
+      
+  
+    </li>
+  
+            
+          
+            </ul>
+          </div>
+      &nbsp;
+        </nav>
+
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+          <nav class="wy-nav-top">
+            <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+            <a href="./intro.html">Sure</a>
+          </nav>
+
+          <div class="wy-nav-content">
+            <div class="rst-content">
+              <ul class="wy-breadcrumbs">
+                <li><a href="/">Docs</a> &raquo;</li>
+                
+                   <li><a href="#how-sure-works">How sure works</a></li>
+                
+                   <li><a href="#monkey-patching">Monkey-patching</a></li>
+                
+              </ul>
+              <hr/>
+              <div class="section"><h1 id="how-sure-works" name="how-sure-works"><a href="#how-sure-works">How sure works</a></h1>
+<p>The class <code>sure.AssertionBuilder</code> creates objects capable of doing
+assertions. The AssertionBuilder simply arranges a vast set of
+possible assertions that are composed by a <code>source</code> object and a
+<code>destination</code> object.</p>
+
+<p>Every assertion, even implicitly if implicitly like in <code>(2 &lt; 3).should.be.true</code>, is doing a source/destination matching.</p>
+<h2 id="chainability" name="chainability"><a href="#chainability">Chainability</a></h2>
+<p>Some specific assertion methods are chainable, it can be useful for short assertions like:</p>
+<div class="highlight"><pre name="how-sure-works-example-1"><span class="n">PERSON</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s">"name"</span><span class="p">:</span> <span class="s">"John"</span><span class="p">,</span>
+  <span class="s">"facebook_info"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s">"token"</span><span class="p">:</span> <span class="s">"abcd"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">PERSON</span><span class="o">.</span><span class="n">should</span><span class="o">.</span><span class="n">have</span><span class="o">.</span><span class="n">key</span><span class="p">(</span><span class="s">"facebook_info"</span><span class="p">)</span><span class="o">.</span><span class="n">being</span><span class="o">.</span><span class="n">a</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span>
+</pre></div>
+<h1 id="monkey-patching" name="monkey-patching"><a href="#monkey-patching">Monkey-patching</a></h1>
+<p>Lincoln Clarete has written the module [<code>sure/magic.py</code>] which I simply added to sure. The most exciting part of the story is that Lincoln exposed the code with a super clean API, it&#39;s called <a href="http://clarete.github.io/forbiddenfruit/">forbidden fruit</a></p>
+<h2 id="why-cpython-only--" name="why-cpython-only--"><a href="#why-cpython-only--">Why CPython-only ?</a></h2>
+<p>Sure uses the <a href="http://docs.python.org/library/ctypes">ctypes</a> module
+to break in python protections against monkey patching.</p>
+
+<p>Although ctypes might also be available in other implementations such
+as <a href="http://www.jython.org/">Jython</a>, only the CPython provide
+<a href="http://docs.python.org/library/ctypes#loading-shared-libraries"><code>ctypes.pythonapi</code></a>
+the features required by sure.</p>
+</div>
+              <footer>
+                <hr/>
+                <a href="http://github.com/gabrielfalcao/sure">&copy; Sure</a>
+                <a href="http://github.com/gabrielfalcao">gabrielfalcao</a>
+                <a href="https://pypi.python.org/pypi/sphinx_rtd_theme">Original Theme</a>
+              </footer>
+            </div>
+          </div>
+        </section>
+      </div>
+    </body>
+</html>
