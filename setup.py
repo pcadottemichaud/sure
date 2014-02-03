@@ -82,7 +82,6 @@ if __name__ == '__main__':
           version=read_version(),
           description='utility belt for automated testing in python for python',
           author='Gabriel Falcao',
-          long_description=local_file('readme.rst'),
           author_email='gabriel@nacaolivre.org',
           include_package_data=True,
           url='http://github.com/gabrielfalcao/sure',
